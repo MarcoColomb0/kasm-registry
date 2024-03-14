@@ -19,8 +19,8 @@
   "run_config": {
     "environment": {
       "TAILSCALE_KEY": "",
-      "SHOW_VPN_STATUS": "1",
-      "SHOW_IP_STATUS": "1"
+      "SHOW_VPN_STATUS": "0",
+      "SHOW_IP_STATUS": "0"
     },
     "sysctls": {
       "net.ipv4.conf.all.src_valid_mark": 1
