@@ -2,7 +2,7 @@
   "friendly_name": "Brave VPN",
   "image_src": "icon.png",
   "description": "Modified Kasm Brave image based on Ubuntu Focal VPN features",
-  "name": "marcocolomb0/kasm-brave-vpn",
+  "name": "marcocolomb0/kasm-brave-vpn:latest",
   "cores": 2,
   "memory": 2768,
   "gpu_count": 0,
@@ -171,6 +171,25 @@
           {
             "key": "vpn_service",
             "value_regex": "wireguard"
+          }
+        ]
+      },
+      {
+        "key": "tailscale_exitnode",
+        "label": "Tailscale Exit Node",
+        "value": null,
+        "allow_saving": true,
+        "placeholder": "Device Name or IP address",
+        "required": true,
+        "help": "The Tailscale's exit node",
+        "input_type": "text",
+        "options": [],
+        "validator_regex": null,
+        "validator_regex_description": null,
+        "display_if": [
+          {
+            "key": "vpn_service",
+            "value_regex": "tailscale"
           }
         ]
       }
