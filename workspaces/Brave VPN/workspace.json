@@ -173,25 +173,6 @@
             "value_regex": "wireguard"
           }
         ]
-      },
-      {
-        "key": "tailscale_exitnode",
-        "label": "Tailscale Exit Node",
-        "value": null,
-        "allow_saving": true,
-        "placeholder": "Device Name or IP address",
-        "required": true,
-        "help": "The Tailscale's exit node",
-        "input_type": "text",
-        "options": [],
-        "validator_regex": null,
-        "validator_regex_description": null,
-        "display_if": [
-          {
-            "key": "vpn_service",
-            "value_regex": "tailscale"
-          }
-        ]
       }
     ]
   }
